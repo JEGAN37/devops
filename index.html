@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background: #020617;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* FEATURES */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* PIPELINE */
+        .pipeline {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            background: #1e293b;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 50px;
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>CI/CD App</h2>
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pipeline</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>CI/CD Pipeline Dashboard</h1>
+        <p>Automate build, test, and deployment using Docker and Jenkins</p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="card">
+            <h3>Fast Builds</h3>
+            <p>Automated Docker image creation with minimal time.</p>
+        </div>
+
+        <div class="card">
+            <h3>Continuous Integration</h3>
+            <p>Code changes automatically trigger the pipeline.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Integration</h3>
+            <p>Push images to a centralized Docker registry.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Deployment</h3>
+            <p>Deploy containers efficiently using Jenkins.</p>
+        </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section class="pipeline">
+        <h2>CI/CD Pipeline Flow</h2>
+
+        <div class="steps">
+            <div class="step">
+                <h3>Code</h3>
+                <p>Developer pushes code to repository</p>
+            </div>
+
+            <div class="step">
+                <h3>Build</h3>
+                <p>Jenkins builds the Docker image</p>
+            </div>
+
+            <div class="step">
+                <h3>Push</h3>
+                <p>Image is pushed to Docker Hub</p>
+            </div>
+
+            <div class="step">
+                <h3>Deploy</h3>
+                <p>Container is deployed automatically</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your Email"><br>
+        <textarea rows="5" placeholder="Your Message"></textarea><br>
+        <button class="btn">Submit</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 CI/CD Project. Built using Docker and Jenkins.</p>
+    </footer>
+
+</body>
+</html>
